@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/v2ctor/fm-stats-preview-card-component-task/](https://github.com/v2ctor/fm-stats-preview-card-component-task/)
+- Live Site URL: [https://v2ctor.github.io/fm-stats-preview-card-component-task/](https://v2ctor.github.io/fm-stats-preview-card-component-task/)
 
 ## My process
 
