@@ -1,0 +1,118 @@
+@use 'variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+body {
+    display: grid;
+    background-color: variables.$bg-main;
+    color: variables.$fg-text;
+    margin: 0;
+    align-content: center;
+}
+
+em {
+    font-style: inherit;
+    color: variables.$bg-accent;
+}
+
+.card {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$bg-card;
+    justify-content: center;
+    justify-items: center;
+    margin: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card__header {
+    background-color: variables.$bg-accent;
+    width: 100%;
+}
+
+.card__header__image {
+    display: grid;
+    opacity: 80%;
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.card__text {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    min-width: 50%;
+}
+
+.card__text__title {
+    color: variables.$fg-emphasize-text;
+}
+
+.card__text__description {
+    display: flex;
+    color: variables.$fg-text;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 15px;
+    height: 100%;
+    align-items: center;
+}
+
+.card__text__metrics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card__text__metrics__item {
+    letter-spacing: 0.1rem;
+}
+
+.card__text__metrics__item__value {
+    color: variables.$fg-emphasize-text;
+    margin-block-end: 0.5rem;
+}
+
+.card__text__metrics__item__parameter {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: variables.$fg-stat;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row-reverse;
+        margin: 5rem 5rem 5rem 5rem;
+    }
+
+    .card__header {
+        width: 100%;
+        min-width: 20vw;
+        height: 100%;
+    }
+
+    .card__text__description {
+        text-align: left;
+    }
+
+    .card__text__metrics {
+        flex-direction: row;
+    }
+}
